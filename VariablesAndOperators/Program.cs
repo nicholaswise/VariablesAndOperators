@@ -53,7 +53,7 @@ namespace VariablesAndOperators
             Console.WriteLine("Reservation: " + reserveName);
             Console.WriteLine("Total Due: $" + totalBill);
             */
-            
+            /*Word problems
             int cupsOfSugar;
             Console.WriteLine("How many cups needed?");
             int cupsAdded = int.Parse(Console.ReadLine());
@@ -71,8 +71,64 @@ namespace VariablesAndOperators
             int diaperCost = int.Parse(Console.ReadLine());
             Console.WriteLine("Diapers you can afford: " + (dollarsHad / diaperCost));
 
+            int currentMoney = 29;
+            int newMoney = 41;
+            Console.WriteLine(newMoney - currentMoney);
+            */
+            //Create a receipt (on console)
+            //Ask how many donations
+            //Get details of the money donated
+            Console.WriteLine("Welcome to your donation tracker!");
+            Console.WriteLine("Please enter the information below as prompted.");
+            //How many ones, fives, tens, twenties, fifties, hundreds, quarters
+            Console.WriteLine("How many $1 bills?");
+            int ones = int.Parse(Console.ReadLine());
+            int onesInDollars = ones * 1;
+            Console.WriteLine("How many $5 bills?");
+            int fives = int.Parse(Console.ReadLine());
+            int fivesInDollars = fives * 5;
+            Console.WriteLine("How many $10 bills?");
+            int tens = int.Parse(Console.ReadLine());
+            int tensInDollars = tens * 10;
+            Console.WriteLine("How many $20 bills?");
+            int twenties = int.Parse(Console.ReadLine());
+            int twentiesInDollars = twenties * 20;
+            Console.WriteLine("How many $50 bills?");
+            int fifties = int.Parse(Console.ReadLine());
+            int fiftiesInDollars = fifties * 50;
+            Console.WriteLine("How many $100 bills?");
+            int hundreds = int.Parse(Console.ReadLine());
+            int hundredsInDollars = hundreds * 100;
+            Console.WriteLine("How many quarters?");
+            int quarters = int.Parse(Console.ReadLine());
+            double quartersInDollars = quarters * .25d;
 
-            
+            //Ask for personal information: name, address, email address
+            Console.WriteLine("What is your name?");
+            string yourName = Console.ReadLine();
+
+            Console.WriteLine("What is your address?");
+            string yourAddress = Console.ReadLine();
+
+            Console.WriteLine("What is your e-mail address?");
+            string yourEmail = Console.ReadLine();
+
+            Console.WriteLine("What is the current fiscal year? Don't know? Look it up!");
+            string fiscalYear = Console.ReadLine();
+
+            //Print personal info and donation amount
+            Console.WriteLine("Your name is " + yourName);
+            Console.WriteLine("Your address is " + yourAddress);
+            Console.WriteLine("Your e-mail address is " + yourEmail);
+            Console.WriteLine("The fiscal year is " + fiscalYear);
+
+            double donationAmount = (onesInDollars + fivesInDollars + tensInDollars + twentiesInDollars + fiftiesInDollars + hundredsInDollars + quartersInDollars);
+            Console.WriteLine("Your donation total is $ " + donationAmount);
+
+            Console.WriteLine("Thank you for your donation!");
+
+
+
 
         }
     }
