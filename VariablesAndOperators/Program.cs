@@ -75,6 +75,7 @@ namespace VariablesAndOperators
             int newMoney = 41;
             Console.WriteLine(newMoney - currentMoney);
             */
+            /*
             //Create a receipt (on console)
             //Ask how many donations
             //Get details of the money donated
@@ -126,6 +127,49 @@ namespace VariablesAndOperators
             Console.WriteLine("Your donation total is $ " + donationAmount);
 
             Console.WriteLine("Thank you for your donation!");
+            */
+
+            /*Assignment: 
+             * local high school swim team, tshirt fundraiser. 
+             * 3 different graphics. 
+             * 1st one, super swim. super swim $15
+             * 2nd graphic, be the shark. $17.50.
+             * 3rd graphic. baby bubbles. $4.75.
+             * swim team needs application to automatically calculate total.
+             * For each transaction, the following receipt:
+             * total number of shirts purchased, subtotal, grand total = 8% tax added.
+             * */
+            Console.WriteLine("Greetings! Welcome to the swim team merchandise calculator! ");
+            
+            Console.WriteLine("How many Super Swim shirts were purchased?");
+            int superSwim = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("How many Be The Shark shirts were purchased?");
+            int beShark = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("How many Baby Bubbles shirts were purchased?");
+            int babyBubbles = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Thank you! Here is your receipt: ");
+
+            Console.WriteLine("Total shirts purchased: " + (superSwim + beShark + babyBubbles));
+
+            int superSwimTotals = superSwim * 15;
+            float beSharkTotals = beShark * 17.50f;
+            float babyBubblesTotals = babyBubbles * 4.75f;
+            double taxRate = .08d;
+            double subTotal = (superSwimTotals + beSharkTotals + babyBubblesTotals);
+            double grandTotal = ((subTotal * taxRate) + subTotal);
+
+            Console.WriteLine("Subtotal: " + subTotal);
+
+            Console.WriteLine("Your grand total is: " + grandTotal);
+
+
+
+
+            
+            
 
 
 
